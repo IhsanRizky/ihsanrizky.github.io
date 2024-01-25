@@ -1,0 +1,386 @@
+<meta name="viewport" content="width-device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+
+<style> 
+    body { 
+      background: url(ghost.jpg) no-repeat center fixed; 
+      background-attachment: scroll;
+      background-size: cover;
+    }
+    body { 
+      color: rgb(0, 0, 0); 
+      font-size: 30px;
+      margin-top: 34;
+      margin-left: 300;
+      font-weight: 300;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+</style>
+<div class="w3-bar">
+    <button class="w3-bar-item w3-button" onclick="openMenu('Home')">Home</button>
+
+    <div class="w3-dropdown-hover">
+        <button class="w3-button">Car</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <button class="w3-bar-item w3-button" onclick="openMenu('Sedan')">Sedan</button>
+            <button class="w3-bar-item w3-button" onclick="openMenu('Sport')">Sport</button>
+            <button class="w3-bar-item w3-button" onclick="openMenu('SUV')">SUV</button>
+            <button class="w3-bar-item w3-button" onclick="openMenu('Supercar')">Supercar</button>
+            <button class="w3-bar-item w3-button" onclick="openMenu('Hypercar')">Hypercar</button>
+        </div>
+    </div>
+
+    <div class="w3-dropdown-hover">
+        <button class="w3-button">Motorcycle</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <button class="w3-bar-item w3-button" onclick="openMenu('Sports')">Sport</button>
+            <button class="w3-bar-item w3-button" onclick="openMenu('Naked')">Naked</button>
+        </div>
+    </div>
+
+    <div class="w3-dropdown-hover">
+        <button class="w3-button">Others</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <button class="w3-bar-item w3-button" onclick="openMenu('Others')">Others Info</button>
+            <button class="w3-bar-item w3-button" onclick="openMenu('Service')">Service Center</button>
+            <button class="w3-bar-item w3-button" onclick="openMenu('About')">About Us</button>
+        </div>
+    </div>
+</div>
+<body class="Home">
+    <div id="Home" class="w3-container menu w3-animate-bottom" style="display: contents;">
+        <div class="w3-col s1 w3-animate-bottom">
+            <div class="w3-container">
+                <center>
+                    <a class="w3-button w3-round-xxlarge w3-card-4 w3-black" style="padding: 0 ; margin-left: -90% ; margin-top: 400%;"><img src="LNKPP.png" alt="Logo" width="200px" ></a>
+                </center>
+            </div>
+        </div>
+
+        <div class="w3-col s4 w3-animate-left">
+            <div class="w3-card-4 w3-round-xlarge transition" style="width: 400px; height: 400px; margin-left: -70%; margin-top: 45%; backdrop-filter:blurred;">
+                <div class="w3-container w3-left-align">
+                    <h1 class="w3-xxxlarge" style="font-weight: 700; margin-left: 10%; margin-right: 10%; margin-top: 10%; margin-bottom: 10%;"><font color="white">Welcome<br> To<br> This<br> Site<br></h1></font>
+                </div>
+            </div>
+        </div>
+        
+        <div class="w3-col s4 w3-animate-right">
+            <div class="w3-button w3-hover w3-card-4 w3-round-xlarge transition" style="width: 200px; height: 50px; margin-left: 120%; margin-top: 45%; backdrop-filter:blurred;">
+                <div class="w3-container w3-left-align">  
+                    <button class="w3-bar-item w3-button" onclick="openMenu('Others')">
+                    <h1 class="w3-xlarge " style="font-weight: 700; margin-left: -15%; margin-right: 0%; margin-top: -8%; margin-bottom:0%;"><font color="white">Others Info</h1></font>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-col s4 w3-animate-right">
+            <div class="w3-button w3-hover w3-card-4 w3-round-xlarge transition" style="width: 200px; height: 50px; margin-left: 120%; margin-top: 5%; backdrop-filter:blurred;">
+                <div class="w3-container w3-center">
+                    <h1 class="w3-xlarge" style="font-weight: 700; margin-left: -10%; margin-right: 0%; margin-top: -2%; margin-bottom: 0%;"><font color="white">Service Center</h1></font>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-col s4 w3-animate-right">
+            <div class="w3-button w3-hover w3-card-4 w3-round-xlarge transition" style="width: 200px; height: 50px; margin-left: 120%; margin-top: 5%; backdrop-filter:blurred;">
+                <div class="w3-container w3-center">
+                    <h1 class="w3-xlarge" style="font-weight: 700; margin-left: -10%; margin-right: 0%; margin-top: -2%; margin-bottom: 0%;"><font color="white">About Us</h1></font>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-container w3-center">
+            <h1 class="w3-xlarge" style="font-weight: 700; margin-left: -10%; margin-right: 0%; margin-top: -2%; margin-bottom: 0%;"><font color="white"><br>Web ini dibuat untuk memenuhi tugas<br>pemrograman web</h1></font>
+        </div>
+    </div>
+</body>
+
+<div class="w3-container menu w3-animate-bottom" style="display: none;">
+    <div class="w3-col">
+        <div class="w3-container">
+            <center>
+                <a class="w3-round-xxlarge w3-card-4 w3-black"><img src="LNKPP.png" alt="" width="100%" ></a>
+            </center>
+        </div>
+    </div>
+</div>
+
+<div id="Sedan" class="w3-container menu w3-animate-zoom" style="display: none;">
+        <div class="w3-row-padding w3-padding-32" style="margin: 0 16px; margin-left: -17%;">
+            <div class="w3-third w3-margin-bottom w3-animate-zoom">
+            <img src="Phantom.jpg" alt="Phantom" style="width:100%">
+            <div class="w3-container w3-white">
+                <p><b>Rolls Royce Phantom</b></p>
+                <p class="w3-opacity">453 hp / 720 Nm </p>
+                <p style="font-size: 20px;">Jakarta,  Indonesia</p>
+                <a href="https://www.rolls-roycemotorcars.com/en_GB/showroom/phantom.html"><button  class="w3-button w3-margin-bottom" style="background-color: gold;">$493,000</button></a>
+            </div>
+            </div>
+
+            <div class="w3-third w3-margin-bottom w3-animate-zoom">
+                <img src="sclass.jpg" alt="Sclass" style="width:100%">
+                <div class="w3-container w3-white">
+                <p><b>Mercedes Benz S Class</b></p>
+                <p class="w3-opacity">367 hp / 500 Nm </p>
+                <p style="font-size: 20px;">Bali,  Indonesia</p>
+                <a href="https://www.mercedesbenzofficial.com/model/23/mercedes-benz-s-class"><button class="w3-button w3-margin-bottom" style="background-color: gold;">$118,450</button></a>
+                </div>
+            </div>
+
+            <div class="w3-third w3-margin-bottom w3-animate-zoom">
+                <img src="Spur.jpg" alt="Spur" style="width:100%">
+                <div class="w3-container w3-white">
+                <p><b>Bentley Flying Spur</b></p>
+                <p class="w3-opacity">543 hp / 568 Nm </p>
+                <p style="font-size: 20px;">Lombok,  Indonesia</p>
+                <a href="https://www.bentleymotors.com/en/models/flying-spur.html"><button class="w3-button w3-margin-bottom" style="background-color: gold;">$218,050</button></a>
+                </div>
+            </div>
+        </div>
+</div>
+
+<div id="Sport" class="w3-container menu w3-animate-zoom" style="display: none;">
+    <div class="w3-row-padding w3-padding-32" style="margin: 0 16px; margin-left: -17%;">
+        <div class="w3-third w3-margin-bottom w3-animate-zoom">
+            <img src="M4CSL.jpg" alt="M4CSL" style="width:100%">
+            <div class="w3-container w3-white">
+                <p><b>BMW M4 CSL</b></p>
+                <p class="w3-opacity">550 hp / 650 Nm </p>
+                <p style="font-size: 20px;">Jakarta,  Indonesia</p>
+                <a href="https://www.bmw-m.com/en/all-models/overview-m-and-m-performance/bmw-m4-csl/2022/bmw-m4-csl.html"><button class="w3-button w3-margin-bottom" style="background-color: gold;">$139,900</button></a>
+            </div>
+        </div>
+
+        <div class="w3-third w3-margin-bottom w3-animate-zoom">
+            <img src="GTR.jpg" alt="gtr" style="width:100%">
+                <div class="w3-container w3-white">
+                <p><b>Nissan GTR R35 NISMO</b></p>
+                <p class="w3-opacity">600 hp / 481 Nm </p>
+                <p style="font-size: 20px;">Makassar,  Indonesia</p>
+                <a href="https://www.nissanusa.com/vehicles/sports-cars/gt-r.html"><button class="w3-button w3-margin-bottom" style="background-color: gold;">$118,450</button></a>
+            </div>
+        </div>
+
+        <div class="w3-third w3-margin-bottom w3-animate-zoom">
+            <img src="gt3rs.jpeg" alt="gt3rs" style="width:100%">
+            <div class="w3-container w3-white">
+                <p><b>Porsche 911 GT3RS</b></p>
+                <p class="w3-opacity">525 hp / 460 Nm </p>
+                <p style="font-size: 20px;">Lombok,  Indonesia</p>
+                <a href="https://www.porsche.com/international/models/911/911-gt3-rs/911-gt3-rs/"><button class="w3-button w3-margin-bottom" style="background-color: gold;">$320,401</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="SUV" class="w3-container menu w3-animate-zoom" style="display: none;">
+    <div class="w3-row-padding w3-padding-32" style="margin: 0 16px; margin-left: -17%;">
+        <div class="w3-third w3-margin-bottom w3-animate-zoom">
+            <img src="Urus.jpg" alt="urus" style="width:100%">
+            <div class="w3-container w3-white">
+                <p><b>Lamborghini Urus</b></p>
+                <p class="w3-opacity">650 hp / 850 Nm </p>
+                <p style="font-size: 20px;">Balikpapan,  Indonesia</p>
+                <a href="https://www.lamborghini.com/en-en/models/urus"><button class="w3-button w3-margin-bottom" style="background-color: gold;">$237,848</button></a>
+            </div>
+        </div>
+
+        <div class="w3-third w3-margin-bottom w3-animate-zoom">
+            <img src="purosangue.jpg" alt="purosangue" style="width:100%">
+                <div class="w3-container w3-white">
+                <p><b>Ferrari Purosangue</b></p>
+                <p class="w3-opacity">715 hp / 716 Nm </p>
+                <p style="font-size: 20px;">Surabaya,  Indonesia</p>
+                <a href="https://www.ferrari.com/en-EN/auto/ferrari-purosangue"><button class="w3-button w3-margin-bottom" style="background-color: gold;">$402,050</button></a>
+            </div>
+        </div>
+
+        <div class="w3-third w3-margin-bottom w3-animate-zoom">
+            <img src="cullinan.jpg" alt="cullinan" style="width:100%">
+            <div class="w3-container w3-white">
+                <p><b>Rolls Royce Cullinan</b></p>
+                <p class="w3-opacity">571 hp / 850 Nm </p>
+                <p style="font-size: 20px;">Batam,  Indonesia</p>
+                <a href="https://www.rolls-roycemotorcars.com/en_US/showroom/cullinan.html"><button class="w3-button w3-margin-bottom" style="background-color: gold;">$353,850</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="Supercar" class="w3-container menu w3-animate-zoom" style="display: none;">
+    <div class="w3-row-padding w3-padding-32" style="margin: 0 16px; margin-left: -17%;">
+        <div class="w3-third w3-margin-bottom w3-animate-zoom">
+            <img src="revuelto.jpg" alt="revuelto" style="width:100%">
+            <div class="w3-container w3-white">
+                <p><b>Lamborghini Revuelto</b></p>
+                <p class="w3-opacity">1,001 hp / 725 Nm </p>
+                <p style="font-size: 20px;">Jakarta,  Indonesia</p>
+                <a href="https://www.lamborghini.com/en-en/models/revuelto"><button class="w3-button w3-margin-bottom" style="background-color: gold;">$608,358</button></a>
+            </div>
+        </div>
+
+        <div class="w3-third w3-margin-bottom w3-animate-zoom">
+            <img src="765lt.jpg" alt="765lt" style="width:100%">
+                <div class="w3-container w3-white">
+                <p><b>Mclaren 765LT</b></p>
+                <p class="w3-opacity">765 hp / 800 Nm </p>
+                <p style="font-size: 20px;">Bandung,  Indonesia</p>
+                <a href="https://cars.mclaren.com/us-en/super-series/765lt"><button class="w3-button w3-margin-bottom" style="background-color: gold;">$382,500</button></a>
+            </div>
+        </div>
+
+        <div class="w3-third w3-margin-bottom w3-animate-zoom">
+            <img src="488pista.jpg" alt="pista" style="width:100%">
+            <div class="w3-container w3-white">
+                <p><b>Ferrari 488 Pista</b></p>
+                <p class="w3-opacity">710 hp / 770 Nm </p>
+                <p style="font-size: 20px;">Malang,  Indonesia</p>
+                <a href="https://www.ferrari.com/en-US/auto/ferrari-488-pista"><button class="w3-button w3-margin-bottom" style="background-color: gold;">$351,300</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="Hypercar" class="w3-container menu w3-animate-zoom" style="display: none;">
+    <div class="w3-row-padding w3-padding-32" style="margin: 0 16px; margin-left: -17%;">
+        <div class="w3-third w3-margin-bottom w3-animate-zoom">
+            <img src="valkyrie.jpg" alt="valkyrie" style="width:100%">
+            <div class="w3-container w3-white">
+                <p><b>Aston Martin Valkyrie</b></p>
+                <p class="w3-opacity">1,160 hp / 925 Nm </p>
+                <p style="font-size: 20px;">Mandalika,  Indonesia</p>
+                <a href="https://www.astonmartin.com/en/models/aston-martin-valkyrie"><button class="w3-button w3-margin-bottom" style="background-color: gold;">$3,500,000</button></a>
+            </div>
+        </div>
+
+        <div class="w3-third w3-margin-bottom w3-animate-zoom">
+            <img src="Absolut.jpg" alt="jesko" style="width:100%">
+                <div class="w3-container w3-white">
+                <p><b>Koenigsegg Jesko Absolut</b></p>
+                <p class="w3-opacity">1,280 hp / 1,500 Nm </p>
+                <p style="font-size: 20px;">Bandung,  Indonesia</p>
+                <a href="https://www.koenigsegg.com/model/jesko-absolut"><button class="w3-button w3-margin-bottom" style="background-color: gold;">$3,000,000</button></a>
+            </div>
+        </div>
+
+        <div class="w3-third w3-margin-bottom w3-animate-zoom">
+            <img src="Bolide.jpg" alt="Bolide" style="width:100%">
+            <div class="w3-container w3-white">
+                <p><b>Bugatti Bolide</b></p>
+                <p class="w3-opacity">1,850 hp / 1,850 Nm </p>
+                <p style="font-size: 20px;">Mandalika,  Indonesia</p>
+                <a href="https://www.bugatti.com/the-bugatti-models/track-only/bolide/"><button class="w3-button w3-margin-bottom" style="background-color: gold;">$4,700,000</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="Sports" class="w3-container menu w3-animate-zoom" style="display: none;">
+    <div class="w3-row-padding w3-padding-32" style="margin: 0 16px; margin-left: -17%;">
+        <div class="w3-third w3-margin-bottom w3-animate-zoom">
+            <img src="V4R.jpg" alt="v4r" style="width:100%">
+            <div class="w3-container w3-white">
+                <p><b>Ducati Panigale V4R</b></p>
+                <p class="w3-opacity">240.5 hp / 112 Nm </p>
+                <p style="font-size: 20px;">Jakarta,  Indonesia</p>
+                <a href="https://www.ducati.com/ww/en/bikes/panigale/panigale-v4-r"><button class="w3-button w3-margin-bottom" style="background-color: gold;">$44,995</button></a>
+            </div>
+        </div>
+
+        <div class="w3-third w3-margin-bottom w3-animate-zoom">
+            <img src="R1M.jpg" alt="r1m" style="width:100%">
+                <div class="w3-container w3-white">
+                <p><b>Yamaha YZF R1M</b></p>
+                <p class="w3-opacity">198 hp / 133.5 Nm </p>
+                <p style="font-size: 20px;">Bandung,  Indonesia</p>
+                <a href="https://pop.yamahamotorsports.com/supersport/models/yzf-r1m"><button class="w3-button w3-margin-bottom" style="background-color: gold;">$27,399</button></a>
+            </div>
+        </div>
+
+        <div class="w3-third w3-margin-bottom w3-animate-zoom">
+            <img src="H2R.jpg" alt="h2r" style="width:100%">
+            <div class="w3-container w3-white">
+                <p><b>Kawasaki Ninja H2R</b></p>
+                <p class="w3-opacity">306 hp / 165 Nm </p>
+                <p style="font-size: 20px;">Mandalika,  Indonesia</p>
+                <a href="https://www.kawasaki.com/en-us/motorcycle/ninja/hypersport/ninja-h2r"><button class="w3-button w3-margin-bottom" style="background-color: gold;">$57,500</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="Naked" class="w3-container menu w3-animate-zoom" style="display: none;">
+    <div class="w3-row-padding w3-padding-32" style="margin: 0 16px; margin-left: -17%;">
+        <div class="w3-third w3-margin-bottom w3-animate-zoom">
+            <img src="Diavel.jpeg" alt="diavel" style="width:100%">
+            <div class="w3-container w3-white">
+                <p><b>Ducati Diavel 1260 Lamborghini</b></p>
+                <p class="w3-opacity">157 hp / 129 Nm </p>
+                <p style="font-size: 20px;">Surabaya,  Indonesia</p>
+                <a href="https://www.ducati.com/ww/en/bikes/diavel/diavel-1260-lamborghini"><button class="w3-button w3-margin-bottom" style="background-color: gold;">$31,995</button></a>
+            </div>
+        </div>
+
+        <div class="w3-third w3-margin-bottom w3-animate-zoom">
+            <img src="duke.jpg" alt="duke" style="width:100%">
+            <div class="w3-container w3-white">
+                <p><b>KTM Duke 1290</b></p>
+                <p class="w3-opacity">180 hp / 140 Nm </p>
+                <p style="font-size: 20px;">Bali,  Indonesia</p>
+                <a href="https://www.ktm.com/en-us/models/sports-tourer/2024-ktm-1290-superdukegt.html"><button class="w3-button w3-margin-bottom" style="background-color: gold;">$17,999</button></a>
+            </div>
+        </div>
+
+        <div class="w3-third w3-margin-bottom w3-animate-zoom">
+            <img src="z1000.jpg" alt="z1000" style="width:100%">
+            <div class="w3-container w3-white">
+                <p><b>Kawasaki Z1000</b></p>
+                <p class="w3-opacity">140 hp / 111 Nm </p>
+                <p style="font-size: 20px;">Jakarta,  Indonesia</p>
+                <a href="https://www.kawasaki.com.au/en-au/motorcycle/z/supernaked/z1000"><button class="w3-button w3-margin-bottom" style="background-color: gold;">$7,195</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="Others" class="w3-container menu" style="display: none;">
+    <div class="w3-container w3-animate-zoom" style="margin-left: -10%; margin-top: 10%;">
+        <img class="w3-round-xxlarge w3-card-4" style="padding: 0 ; " src="Ravanely1.png" alt="ravanely" width="300px">
+        <img class="w3-round-xxlarge w3-card-4" style="padding: 0 ; " src="dante.png" alt="dante" width="300px">
+        <img class="w3-round-xxlarge w3-card-4" style="padding: 0 ; " src="KalvinPanigale.png" alt="Kalvin" width="430px">
+        <img class="w3-round-xxlarge w3-card-4" style="padding: 0 ; " src="tamiii.png" alt="tami" width="300px">
+        <img class="w3-round-xxlarge w3-card-4" style="padding: 0 ; " src="Hanako2.png" alt="hana" width="300px">
+    </div>
+</div>
+
+<div id="About" class="w3-container menu" style="display: none;">
+    <div class="w3-container w3-white w3-round-xxlarge w3-card-4" style="height: 800px; width: 600px; margin-left: 20%">
+        <img src="LNKPP.png" alt="logo" style="width: 50%; margin-left: 25%; margin-top: 10%;">
+        <center>
+            <br>
+            <br>
+            <bbr></bbr>
+            <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">10123097</h1>
+            <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">IHSAN RIZKY MUHARROM</h1>
+            <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">KELAS : IF-3</h1>
+            <br>
+            <br>
+            <a href="https://www.instagram.com/ihs.rzky/?hl=id"><img src="IG.png" style="width: 60px;"></a>
+            <a href="https://www.youtube.com/channel/UCDwPVnuyxnIwFDOcS_OqUXA"><img src="YT.png" style="width: 60px;"></a>
+        <center>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openMenu(car) {
+     var i;
+     var x = document.getElementsByClassName("menu");
+     for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none"; 
+     }
+     document.getElementById(car).style.display = "block"; 
+    }
+</script>
